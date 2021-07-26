@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://static-s.aa-cdn.net/img/gp/20600003421725/7ZmhLBKfkPg7kJ7N7lH4GccTl80iLMNvVe1zxZz2lAG7yLLtckQXnpp3ShF1ayOE56Q=w300?v=1" type="image/x-icon">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="panel">
+        <div style="display: flex; align-items: center;">
+            <h2>Color:</h2>
+            <input class="color-input" type="color" id="head" name="head" value="#000000" onchange="changeColor(value)">
+        </div>
+        <div style="display: flex; align-items: center;">
+            <h2>stroke size:</h2>
+            <input type="range" min="1" max="100" value="10" class="slider" id="myRange" onchange="changeStrokeSize(value)">
+            <span id="value">10</span>
+        </div>
+        <div class="del-btn" onclick="del()">Delete</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
